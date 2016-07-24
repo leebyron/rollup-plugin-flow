@@ -1,0 +1,26 @@
+{
+  "name": "rollup-plugin-flow",
+  "version": "1.0.0",
+  "description": "Remove Flow type annotations before bundling.",
+  "author": "Lee Byron <lee@leebyron.com> (http://leebyron.com/)",
+  "license": "BSD-3-Clause",
+  "main": "index.js",
+  "homepage": "https://github.com/leebyron/rollup-plugin-flow",
+  "bugs": {
+    "url": "https://github.com/leebyron/rollup-plugin-flow/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/leebyron/rollup-plugin-flow.git"
+  },
+  "keywords": [
+    "rollup-plugin",
+    "flow",
+    "flowtype",
+    "strip"
+  ],
+  "dependencies": {
+    "flow-remove-types": "^1.0.0",
+    "rollup-pluginutils": "^1.5.1"
+  }
+}
