@@ -13,6 +13,10 @@
     "type": "git",
     "url": "http://github.com/leebyron/rollup-plugin-flow.git"
   },
+  "scripts": {
+    "test": "DIFF=$(rollup -c test/rollup.config.js test/source.js | diff test/expected.js -); if [ -n \"$DIFF\" ]; then echo \"$DIFF\"; exit 1; fi;",
+    "test-update": "rollup -c test/rollup.config.js test/source.js > test/expected.js"
+  },
   "keywords": [
     "rollup-plugin",
     "flow",
@@ -22,5 +26,8 @@
   "dependencies": {
     "flow-remove-types": "^1.0.0",
     "rollup-pluginutils": "^1.5.1"
+  },
+  "devDependencies": {
+    "rollup": "^0.34.1"
   }
 }
