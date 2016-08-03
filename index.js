@@ -7,7 +7,7 @@ module.exports = function(options) {
 
   return {
     name: 'flow-remove-types',
-    transform(code, id) {
+    transform: function(code, id) {
       if (filter(id)) {
         return {
           code: flowRemoveTypes(code),
