@@ -9,9 +9,10 @@ module.exports = function(options) {
     name: 'flow-remove-types',
     transform: function(code, id) {
       if (filter(id)) {
+        var transformed = flowRemoveTypes(code, options);
         return {
-          code: flowRemoveTypes(code),
-          map: { mappings: '' }
+          code: transformed.toString(),
+          map: transformed.generateMap()
         };
       }
     }

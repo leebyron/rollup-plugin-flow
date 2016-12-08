@@ -21,3 +21,36 @@ rollup({
   plugins: [ flow() ]
 }).then(...);
 ```
+
+## Options
+
+Provide options as an object argument to `flow()`.
+
+#### `all` - Transform all files, not just those containing `@flow` comments.
+
+*Default:* `false`
+
+```js
+var flow = require('../');
+
+module.exports = {
+  plugins: [ flow({ all: true }) ],
+  format: 'cjs'
+};
+```
+
+#### `pretty` - Remove flow types without replacing them with whitespace.
+
+*Default:* `false`
+
+*Note:* Typically source maps are not necessary for this transform, however
+source maps are recommended when generating "pretty" results.
+
+```js
+var flow = require('../');
+
+module.exports = {
+  plugins: [ flow({ pretty: true }) ],
+  format: 'cjs'
+};
+```
