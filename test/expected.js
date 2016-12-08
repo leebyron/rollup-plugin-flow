@@ -4,6 +4,8 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var someModule = require('some-module');
 
+/*       */
+
 class MyClass    extends someModule.SomeClass                          {
 
           
