@@ -11,7 +11,7 @@ class MyClass    extends someModule.SomeClass                          {
           
 
   constructor(value   ) {
-    this.value = value
+    this.value = value;
   }
 
   get()    {
