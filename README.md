@@ -31,7 +31,7 @@ Provide options as an object argument to `flow()`.
 *Default:* `false`
 
 ```js
-var flow = require('../');
+var flow = require('rollup-plugin-flow');
 
 module.exports = {
   plugins: [ flow({ all: true }) ],
@@ -47,7 +47,7 @@ module.exports = {
 source maps are recommended when generating "pretty" results.
 
 ```js
-var flow = require('../');
+var flow = require('rollup-plugin-flow');
 
 module.exports = {
   plugins: [ flow({ pretty: true }) ],
