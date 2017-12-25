@@ -17,7 +17,7 @@ var rollup = require('rollup').rollup;
 var flow = require('rollup-plugin-flow');
 
 rollup({
-  entry: 'main.js',
+  input: 'main.js',
   plugins: [ flow() ]
 }).then(...);
 ```
