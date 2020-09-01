@@ -6,6 +6,9 @@ var someModule = require('some-module');
 
 /*       */
 
+const myClass                                       =
+  options => new MyClass(options.value);
+
 class MyClass    extends someModule.SomeClass                          {
 
           
@@ -20,4 +23,5 @@ class MyClass    extends someModule.SomeClass                          {
 
 }
 
+exports.myClass = myClass;
 exports.MyClass = MyClass;
